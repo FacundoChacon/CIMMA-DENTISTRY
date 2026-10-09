@@ -3939,6 +3939,12 @@ h1 .subtitle {
     gap: 0.5rem 2rem;                      /* Espaciado vertical y horizontal entre los elementos */
 }
 
+@media screen and (max-width: 736px) {
+    #coberturas ul.alt {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Adaptación para pantallas de celulares muy chicas */
 @media screen and (max-width: 480px) {
     #coberturas ul.alt {
@@ -4178,6 +4184,32 @@ body.is-ie #wrapper section > .contentAgenda {
         letter-spacing: 0.05rem;
         width: 100%;
         max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    h1 {
+        padding-right: 0;
+    }
+
+    h1 .subtitle {
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    .contacto-grid li:nth-child(2),
+    .contacto-grid li:nth-child(3) {
+        width: 100%;
+    }
+
+    .mapa-horizontal-contenedor {
+        width: 100%;
+    }
+
+    .mapa-horizontal-contenedor iframe {
+        width: 100%;
     }
 
 }
